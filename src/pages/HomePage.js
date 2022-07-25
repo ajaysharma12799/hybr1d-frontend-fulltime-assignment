@@ -7,7 +7,7 @@ const HomePage = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [loading, setLoading] = useState(true);
     const [searchResult, setSearchResult] = useState([]);
-    const Url = `http://hn.algolia.com/api/v1/search?query=${searchQuery}`;
+    const Url = `https://hn.algolia.com/api/v1/search?query=${searchQuery}`;
   
     const handleSubmit = async (e) => {
       e.preventDefault();
