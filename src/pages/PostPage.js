@@ -7,7 +7,7 @@ const PostPage = () => {
     const [loading, setLoading] = useState(true);
     const [postData, setPostData] = useState({});
     const UrlParams = useParams();
-    const Url = `http://hn.algolia.com/api/v1/items/${UrlParams.id}`;
+    const Url = `https://hn.algolia.com/api/v1/items/${UrlParams.id}`;
 
     const fetchNews = async () => {
         const response = await axios.get(Url);
